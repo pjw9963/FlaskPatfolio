@@ -43,7 +43,7 @@ section {
 
 .me-image {
     border-radius: 50%;
-    height: 450px;
+    max-width: 100%;
 }
 
 section li {
