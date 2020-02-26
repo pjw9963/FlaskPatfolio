@@ -38,9 +38,17 @@ hr {
 
 section {
     background-color: #1d7d8c;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-#about-header {
-    
+.me-image {
+    border-radius: 50%;
+    height: 450px;
 }
+
+section li {
+    color: white;
+    font-size: 18px;
+    padding-top:15px;
+}
+
