@@ -1,6 +1,7 @@
 from patfolio import app
+from flask import render_template
 
 
 @app.route('/')
 def hello():
-    return "insert homepage here"
+    return render_template('base.html')
