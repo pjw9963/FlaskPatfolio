@@ -36,8 +36,16 @@ hr {
     background-color: #0c3847;
 }
 
+.bg-dark-sea-green {
+    color:#babe9c;
+    background-color: #a86949;
+}
+
+section:first-of-type {
+    background-color: #1d7d8c; 
+}
+
 section {
-    background-color: #1d7d8c;
     min-height: 100vh;
 }
 
@@ -50,5 +58,9 @@ section li {
     color: white;
     font-size: 18px;
     padding-top:15px;
+}
+
+.card {
+    background-color: #babe9c;
 }
 
