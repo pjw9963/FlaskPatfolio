@@ -3,6 +3,9 @@ from patfolio.forms import LoginForm
 from flask import render_template, url_for, flash, redirect
 from patfolio.models import User
 from flask_login import logout_user, login_user
+import os
+from os import path
+import random
 
 
 @app.route('/')
@@ -29,3 +32,12 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('home'))
+
+
+@app.route('/omg')
+def play_noise():
+    soundbit = 'ohno' + str(random.randrange(1,11)) + '.wav'
+    soundbit = path.join(path.dirname(__file__), soundbit)
+    print(soundbit)
+    os.system("play " + soundbit)
+    return('', 200)

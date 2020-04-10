@@ -44,6 +44,7 @@
                         I use this site to test out web technologies and to do stupid stuff. It also serves as a decent
                         way to show myself off to potental employers.
                     </p>
+                    <button type="button" class="btn btn-secondary" id="btn_omg">Click Me to Screen</button>
                 </div>
             </div>
         </div>
@@ -140,4 +141,17 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('btn_omg').addEventListener('click', postData);
+
+        function postData(event){
+            event.preventDefault();
+            var getUrl = window.location;
+            var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+            console.log(baseUrl + '/omg');
+            fetch(baseUrl + 'omg');
+        }
+    </script>
+
 {%endblock%}
